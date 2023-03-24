@@ -33,7 +33,7 @@ public class Main {
                         """;
                 //tutte le statuistiche più recenti
                 String statsQuery = """
-                                select  cs.population, cs.gdp
+                                select 'year', cs.population, cs.gdp
                                 from country_stats cs
                                 where cs.country_id = ?
                                 order by `year` desc
